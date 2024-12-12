@@ -1,0 +1,758 @@
+---
+website:
+  title: "AVT"
+  description: "Informations, Politiques & Histoire [Atlas de Vie de la Tshuapa (AVT)](https://avt.github.io/)"
+  open-graph:
+    image: imagens province/rdc_flaag.jpeg
+    image-alt: "DR Congo flag"
+  twitter-card:
+    image: imagens province/rdc_flaag.jpeg
+    image-alt: "DR Congo flag"
+    card-style: summary_large_image
+  site-url: https://avt.github.io/
+  favicon: images/favicon.ico
+  navbar:
+    background: "#082411"
+    foreground: "#FFFFFF"
+    title: ""
+    search: true
+    logo: images/logos/ALA_Logo_Inline_REV-RGB.png
+    left: 
+      - href: index.qmd
+        icon: house-door-fill
+        text: " "
+      - href: introduction.qmd
+        text: "À propos"
+    right:
+      - href: gouvernorat.qmd
+        text: "Gourvernorat"
+        menu:
+          - href: gouverneur.qmd
+            text: "Gouverneur"
+          - href: ministres.qmd
+            text: "Ministres"
+      - href: administration.qmd
+        text: "Territoriale"
+      - href: posts/index.qmd
+        text: "Nouvelles"
+      - href: ressources.qmd
+        text: "Ressources"
+      - href: gallery/index.qmd
+        text: "Galleries"
+format: 
+  html: 
+    include-in-header: ""
+    #include-after-body: _footer.html
+    sidebar: false
+    anchor-sections: false
+    css: [theme.css, index.css]
+#title-block-banner: "url('imagens province/rdc_flaag.jpeg')"
+---
+
+
+::: {#dynamic-text .slide-down}
+<center>Ce site est une propriété du gouvernement provincial de la Tshuapa (*Site officiel de la Tshuapa*). Nous espérons que vous trouverez intéressant le contenu de ce site. <br> **Savourez ce moment**!</center>
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+:::::: column-screen
+::::: column-screen-inset
+::: {.home-column-image .col-right}
+![](gouv_rdc.jpeg){.home-img-lens width="300"}
+:::
+
+::: {.home-column-text .col-left}
+<center>
+
+<a href="https://recodata.io/">
+
+<h1 class="heading-home">
+
+Tshuapa <i class="bi bi-globe-europe-africa"></i>fficiel
+
+</h1>
+
+</a>
+
+</center>
+
+<justify> Il s'agit d'un site informatif sur la province de la Tshuapa en République Démocratique du Congo [Juafa.com](https://recodata.io/). Nous espérons que vous y trouverez informations que vous recherchez sur la province de la Tshuapa pour des possibles investissements et opportunités de collaborations et de travail. </justify> <br> <br>
+
+<center>
+
+[Designed by [Ekumbo B. Babby](https://babbymed.github.io/) and [Université de Ikela](https://universiteikela.github.io)]{style="font-face:italic;"}<br>
+
+[Images (Armoiries de la RD Congo): Open source, Google image]{style="font-size:.7rem; color:#a7abb4;"}
+
+</center>
+:::
+:::::
+::::::
+
+:::::: {.column-screen style="background-color:#31511E;"}
+::::: column-screen-inset
+::: {.home-column-image .col-left}
+<a href="https://labs.ala.org.au/posts/">
+
+![](imagens%20province/riviere_thsuapa.jpg){.home-img}
+
+</a>
+:::
+
+::: {.home-column-text .col-right}
+<center>
+
+<h1 class="heading-home" style="color: #fff;">
+
+Posts
+
+</h1>
+
+[How-to articles for solving scientific problems]{style="color: #fff; font-style: italic"}
+
+</center>
+
+```{r, include=TRUE}
+ 
+```
+:::
+:::::
+::::::
+
+:::::: column-screen
+::::: column-screen-inset
+::: {.home-column-image .col-right}
+<a href="https://labs.ala.org.au/research/highlights/"> ![](draft.jpeg){.home-img} </a>
+:::
+
+::: {.home-column-text .col-left}
+<center>
+
+<h1 class="heading-home">
+
+Research
+
+</h1>
+
+[Highlighting research supported by ALA data]{style="font-style: italic"}
+
+</center>
+
+```{r, include=TRUE}
+ 
+```
+:::
+:::::
+::::::
+
+:::::: {.column-screen style="background-color:#117554;"}
+::::: column-screen-inset
+::: {.home-column-image .col-left}
+<a href="https://labs.ala.org.au/software/index.html">
+
+![](images/homepage/home_ala-software-c.png){.home-img-transparent}
+
+</a>
+:::
+
+::: {.home-column-text .col-right}
+<center>
+
+<h1 class="heading-home" style="color: #fff;">
+
+Software
+
+</h1>
+
+[Tools supported by the Science & Decision Support Team]{style="font-style: italic; color: #fff;"}
+
+</center>
+
+```{r, include=TRUE}
+ 
+```
+:::
+:::::
+::::::
+
+:::::: {.column-screen style="background-color:#ffffff;"}
+::::: column-screen-inset
+::: {.home-column-image .col-left}
+<center>
+
+<h1 class="heading-home" style="color: #222322;">
+
+Books
+
+</h1>
+
+[Long-form resources by the Science & Decision Support Team]{style="font-style: italic;"}
+
+</center>
+
+```{r, include=TRUE}
+
+```
+:::
+
+::: {.home-column-text .col-right}
+<center>
+
+<a href="https://labs.ala.org.au/books/index.html">
+
+![](books/images/covers/cleaner-shrimp_cover.png){.home-img-transparent width="45%" style="border-radius:2%;"}
+
+</a>
+
+</center>
+:::
+:::::
+::::::
+
+------------------------------------------------------------------------
+
+::::: {.column-screen style="background-color:#fff;"}
+::: column-page
+<center>
+
+<h1>{{< fa earth-oceania >}} We value</h1>
+
+<a href="https://labs.ala.org.au/books/index.html">
+
+![](books/images/covers/cleaner-shrimp_cover.png){.home-img-transparent width="45%" style="border-radius:2%;"}
+
+</a>
+
+</center>
+:::
+
+::: column-screen
+```{r, include=TRUE}
+
+```
+:::
+:::::
+
+<!-- Diversité culturelle -->
+<div class="content-section">
+  <div class="image">
+    <img src="imagens province/diversite_culturelle.jpg" alt="Diversité culturelle de la Tshuapa">
+  </div>
+  <div class="text">
+    <h1>Richesse Culturelle</h1>
+    <p>
+      La province de la Tshuapa est un véritable carrefour culturel. Elle abrite une mosaïque de communautés ethniques qui perpétuent des traditions uniques, notamment à travers la musique, la danse, et l’artisanat. 
+      <a href="#more-culture">En savoir plus sur la diversité culturelle</a>.
+    </p>
+  </div>
+</div>
+
+<!-- Géographie -->
+<div class="content-section">
+  <div class="text">
+    <h1>Géographie et Environnement</h1>
+    <p>
+      La Tshuapa est traversée par la rivière du même nom, qui joue un rôle crucial pour la vie économique et sociale de la province. La région est également connue pour sa biodiversité exceptionnelle, avec de vastes forêts abritant une faune et une flore riches. 
+      <a href="#more-geography">Explorer la géographie de la Tshuapa</a>.
+    </p>
+  </div>
+  <div class="image">
+    <img src="imagens province/riviere_tshuapa.jpg" alt="Rivière Tshuapa">
+  </div>
+</div>
+
+<!-- Opportunités économiques -->
+<div class="content-section">
+  <div class="image">
+    <img src="imagens province/economie_tshuapa.jpg" alt="Économie et opportunités">
+  </div>
+  <div class="text">
+    <h1>Économie et Opportunités</h1>
+    <p>
+      La Tshuapa offre de nombreuses opportunités dans les secteurs agricoles, forestiers et du tourisme écologique. Les investisseurs sont encouragés à explorer cette région pour ses ressources naturelles abondantes.
+      <a href="#investment-opportunities">Découvrir les opportunités d’investissement</a>.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<footer class="footer">
+  <p>&copy; 2024 Gouvernement provincial de la Tshuapa. Tous droits réservés.</p>
+  <p><a href="#contact">Nous contacter</a> | <a href="#about">À propos</a></p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dynamicText = document.getElementById("dynamic-text");
+  let visible = true;
+
+  setInterval(() => {
+    dynamicText.style.opacity = visible ? "1" : "0";
+    visible = !visible;
+  }, 4500);
+});
+</script>
+
+
+
+
+
+
+********************************************************************************
+
+
+
+
+
+
+/* ----------- INDEX PAGE -----------*/
+  
+  /* HERO IMAGE AT TOP OF PAGE*/
+  
+  .hero-container {
+    overflow: hidden;
+    position: relative;
+    max-height: 52vh;
+    height: 52vh;
+  }
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  /* liner gradient tints the image darker for readability*/
+    background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ), url(images/frog.jpg);
+  background-size: cover;
+  height: auto;
+  width: 100vw;
+  background-color: #141c25;
+    display: flex; /* Change to `display: none` for no hero image */
+    justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  padding: 21vh 0;
+}
+
+.ALA-top {
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  color: #31511E;
+    padding-right: 133px;
+  margin-bottom: -4.7rem;
+  font-weight: bold;
+}
+
+.RD_Congo {
+  position: relative;
+  font-size: 100px;
+  margin-bottom: -4.7rem;
+  font-weight: bold;
+}
+
+.ALA-bottom {
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  color: #EEECEA;
+    padding-left: 105px;
+  font-weight: bold;
+}
+
+.ALA-byline {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+    padding-top: 0px;
+}
+
+.credit-text {
+  position: absolute;
+  text-align: left;
+  left: 2%;
+  bottom: 5%;
+}
+
+.ALA-species-credit {
+  font-size: 11px;
+  color: white;
+}
+
+.ALA-image-credit {
+  text-align: left;
+  font-size: 14px;
+  color: white;
+}
+
+@media (min-width: 992px){
+  .credit-text {
+    position: absolute;
+    bottom: 3%;
+  }
+}
+
+@media (max-height: 876px) {
+  .hero-container {
+    max-height: 75vh;
+    height: 66vh;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 952px){
+  /*--    --*/
+    .hero-container {
+      max-height: 75vh;
+      /*height: 66vh;*/
+        display: flex;
+    }
+  .hero-image {
+    position: relative;
+    background-attachment: scroll;
+    background-position: 84% center;
+    display: block;
+    padding: none;
+    align-content: center;
+    object-fit: cover;
+    padding: 6vh 0;
+  }
+  
+}
+
+/*----------------------------------------------*/
+  
+  /*-- Our values --*/
+  
+  .px-0 {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+
+.values-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px){
+  .col-lg-4 {
+    float:left;
+    width: 33%;
+    flex: 1;
+    max-width: 33.3333333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    display:flex;
+  }
+}
+
+.value-feature {
+  background: #DBD7D2;
+    margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom:40px;
+  border-radius: 26px;
+}
+
+.value-text {
+  color: #222322;
+}
+
+.value-block {
+  color: #222322;
+    padding: 50px 40px;
+  float: left;
+  display: block;
+}
+
+@media screen and (max-width: 952) {
+  .value-block {
+    padding: 20px 40px;
+  }
+}
+
+/*----------------------------------------------*/
+  
+  /*-- Categories of posts buttons --*/
+  
+  .category-row {
+    margin-top:10%;
+  }
+
+.category-column {
+  float: left;
+  width: 33%;
+  padding: 0 0px;
+  flex-direction: column
+}
+
+.category-image {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 4.4rem;
+  width: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  transform: perspective(1px) translate3d(0, 15px, 0);
+  transition: all .1ms;
+}
+
+@media screen and (max-width: 952px) {
+  .category-image {
+    height: 75px;
+  }
+  .category-row {
+    margin-top: 0%;
+  }
+}
+
+.honey {
+  filter: invert(40%) sepia(35%) saturate(984%) hue-rotate(325deg) brightness(93%) contrast(87%);
+}
+
+.honey:hover {
+  filter: invert(95%) sepia(43%) saturate(3246%) hue-rotate(313deg) brightness(100%) contrast(102%);
+  color: #FFC557;
+}
+
+.honey-white {
+  filter: invert(100%) brightness(100%);
+}
+
+.honey-white:hover {
+  filter: invert(95%) sepia(43%) saturate(3246%) hue-rotate(313deg) brightness(100%) contrast(102%);
+  color: #FFC557;
+}
+
+
+.home-column-image {
+  width: 30%;
+  padding: 20px 20px;
+  flex-direction: column;
+}
+
+.home-column-text {
+  width: 30%;
+  padding: 20px 20px;
+  flex-direction: column;
+}
+
+.col-left {
+  float: left;
+  margin-left: 20%;
+}
+
+.col-right {
+  float:right;
+  margin-right: 20%;
+}
+
+img.home-img {
+  width: 100%;
+  border-style: none;
+  height: auto;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(184, 87, 62, 0.1) 0px 0px 8px;
+}
+
+img.home-img-transparent {
+  width: 95%;
+  margin-left: 10%;
+  border-style: none;
+  height: auto;
+}
+
+img.home-img-lens {
+  width: 100%;
+  border-style: none;
+  height: auto;
+}
+
+img.lens-logo {
+  max-width:2.8rem!important;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.heading-home {
+  font-size: 3rem;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+  
+  @media (max-width: 1660px) {
+    .col-left {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    
+    .col-right {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    
+    img.home-img {
+      margin-left: auto
+      margin-right: auto;
+    }
+  }
+
+@media screen and (max-width: 952px) {
+  .home-column-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+  }
+  .home-column-text {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .col-left {
+    display: block;
+    margin-left: auto;
+  }
+  
+  .col-right {
+    display: block;
+    margin-right: auto;
+  }
+  
+  img.home-img {
+    width: 100%;
+    margin-left: auto;
+  }
+  
+  img.home-img-lens {
+    width: 100%;
+    margin-left: auto;
+  }
+  
+  img.home-img-transparent {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+
+/* possible hex badge code */
+  .hexBadges img.r1.c0, .hexBadges img.r3.c0, .hexBadges img.r5.c0 {
+    left: 323px;
+  }
+
+.hexBadges img.r0.c1, .hexBadges img.r2.c1, .hexBadges img.r4.c1 {
+  left: 438px;
+}
+
+/*.hexBadges img.r0.c2, .hexBadges img.r2.c2, .hexBadges img.r4.c2 {
+  left: 250px;
+}*/
+  
+  .hexBadges img.r1 {
+    top: 50px;
+  }
+.hexBadges img.r2 {
+  top: 258px;
+}
+
+.hexBadges {
+  position: relative;
+  width: 500px;
+  margin-top: -130px;
+  height: 600px;
+}
+
+.hexBadges img {
+  width: 236px;
+  height: auto;
+  position: absolute;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -o-transition-duration: .25s;
+  transition-duration: .25s;
+}
+img {
+  max-width: 100%;
+}
+
+```{=html}
+<style>
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  .slide-up {
+    animation: slideUp 10s forwards;
+  }
+
+  .slide-down {
+    animation: slideDown 30s forwards;
+  }
+</style>
+```
+
+```{=html}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dynamicText = document.getElementById("dynamic-text");
+    let isVisible = false;
+
+    setInterval(() => {
+      if (isVisible) {
+        dynamicText.classList.remove("slide-up");
+        dynamicText.classList.add("slide-down");
+      } else {
+        dynamicText.classList.remove("slide-down");
+        dynamicText.classList.add("slide-up");
+      }
+      isVisible = !isVisible;
+    }, 4500); // Change text every 30 seconds
+  });
+</script>
+```
+
+
+

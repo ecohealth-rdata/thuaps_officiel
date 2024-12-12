@@ -1,0 +1,55 @@
+---
+title: "<span style='text-align:center;'> Page not found </span>"
+title-block-banner: "#B8573E"
+include-after-body: _footer.html
+website:
+  navbar:
+    background: "#00113c"
+    foreground: "#FFFFFF"
+    left: 
+      - href: index.qmd
+        icon: house-door-fill
+        text: " "
+      - href: introduction.qmd
+        text: "À propos"
+    right:
+      - href: gouvernorat.qmd
+        text: "Gourvernorat"
+        menu:
+          - href: gouverneur.qmd
+            text: "Gouverneur"
+          - href: ministres.qmd
+            text: "Ministres"
+      - href: administration.qmd
+        text: "Territoriale"
+      - href: posts/index.qmd
+        text: "Nouvelles"
+      - href: ressources.qmd
+        text: "Ressources"
+      - href: gallery/index.qmd
+        text: "Galleries"
+format: 
+  html: 
+    include-in-header: ""
+    #include-after-body: _footer.html
+    sidebar: false
+    anchor-sections: false
+    css: [about.css, theme.css]
+#title-block-banner: "url('imagens province/rdc_flaag.jpeg')"
+---
+
+::: {style="text-align:center;"}
+Nous avons réorganisé certaines choses, mais **tout le contenu est toujours là !** <br>(Il pourrait simplement avoir un nom différent)
+:::
+
+::: {layout="[-1,1,-1]" style="margin-left: auto; margin-right: auto;"}
+![](piliocolobus_tholloni_red_colobus.jpeg){.rounded}
+:::
+
+::: figure-caption
+*piliocolobus tholloni* - red colobus ou colobus rouge de la Tshuapa (Photo crédit : Google images)
+:::
+
+::: {style="text-align:center;"}
+Ne partez pas ! Consultez la [Home page](https://avt.github.io/) ou notre liste d'[articles](https://avt.github.io/posts/) pourur trouver ce que vous recherchez !
+:::

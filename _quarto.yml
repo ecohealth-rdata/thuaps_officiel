@@ -1,0 +1,69 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!archive/"
+website:
+  title: "AVT"
+  description: "Informations, Politiques & Histoire [Atlas de Vie de la Tshuapa (AVT)](https://avt.github.io/)"
+  open-graph:
+    image: imagens province/rdc_flaag.jpeg
+    image-alt: "DR Congo flag"
+  twitter-card:
+    image: imagens province/rdc_flaag.jpeg
+    image-alt: "DR Congo flag"
+    card-style: summary_large_image
+  site-url: https://avt.github.io/
+  favicon: images/favicon.ico
+  navbar:
+    background: "#00113c"
+    foreground: "#FFFFFF"
+    title: ""
+    search: true
+    logo: images/logos/ALA_Logo_Inline_REV-RGB.png
+    left: 
+      - href: index.qmd
+        icon: house-door-fill
+        text: " "
+      - href: about.qmd
+        text: "À propos"
+    right:
+      - href: gouvernorat.qmd
+        text: "Gourvernorat"
+        menu:
+          - href: gouverneur.qmd
+            text: "Gouverneur"
+          - href: ministres.qmd
+            text: "Ministres"
+      - href: administration.qmd
+        text: "Territoriale"
+      - href: posts/index.qmd
+        text: "Nouvelles"
+      - href: ressources.qmd
+        text: "Ressources"
+      - href: gallery/index.qmd
+        text: "Galleries"
+      
+  announcement:
+    icon: info-circle
+    dismissable: true
+    content: "Découvrez le nouveau site du *Gouvernement provincial de la Tshuapa* ! [Cliquez ici pour en savoir plus](https://avt.github.io/posts)."
+    type: light
+    position: below-navbar
+
+format:
+  html:
+    fontsize: 1.15rem
+    monofont: Fira Code
+    highlight-style: arrow
+    css: [theme.css, custom_theme.scss]
+    toc: true
+    code-overflow: scroll
+    linkcolor: "#06D001"
+    include-before-body: _fathom.html
+logo: gouv_rdc.jpeg
+freeze: true
+
+
+
+

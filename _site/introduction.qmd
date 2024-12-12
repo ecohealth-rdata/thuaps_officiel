@@ -1,0 +1,301 @@
+---
+website:
+  title: "AVT"
+  description: "Informations, Politiques & Histoire [Atlas de Vie de la Tshuapa (AVT)](https://avt.github.io/)"
+  open-graph:
+    image: imagens province/rdc_flaag.jpeg
+    image-alt: "DR Congo flag"
+  twitter-card:
+    image: imagens province/rdc_flaag.jpeg
+    image-alt: "DR Congo flag"
+    card-style: summary_large_image
+  site-url: https://avt.github.io/
+  favicon: images/favicon.ico
+  navbar:
+    background: "#082411"
+    foreground: "#FFFFFF"
+    title: ""
+    search: true
+    logo: images/logos/ALA_Logo_Inline_REV-RGB.png
+    left: 
+      - href: index.qmd
+        icon: house-door-fill
+        text: " "
+      - href: introduction.qmd
+        text: "À propos"
+    right:
+      - href: gouvernorat.qmd
+        text: "Gourvernorat"
+        menu:
+          - href: gouverneur.qmd
+            text: "Gouverneur"
+          - href: ministres.qmd
+            text: "Ministres"
+      - href: administration.qmd
+        text: "Territoriale"
+      - href: posts/index.qmd
+        text: "Nouvelles"
+      - href: ressources.qmd
+        text: "Ressources"
+      - href: gallery/index.qmd
+        text: "Galleries"
+format: 
+  html: 
+    include-in-header: ""
+    #include-after-body: _footer.html
+    sidebar: false
+    anchor-sections: false
+    css: [theme.css, index.css]
+#title-block-banner: "url('imagens province/rdc_flaag.jpeg')"
+---
+
+
+::: {#dynamic-text .slide-down}
+<center>Ce site est une propriété du gouvernement provincial de la Tshuapa (*Site officiel de la Tshuapa*). Nous espérons que vous trouverez intéressant le contenu de ce site. <br> **Savourez ce moment**!</center>
+:::
+
+<br>
+
+------------------------------------------------------------------------
+
+:::::: column-screen
+::::: column-screen-inset
+::: {.home-column-image .col-right}
+![](gouv_rdc.jpeg){.home-img-lens width="300"}
+:::
+
+::: {.home-column-text .col-left}
+<center>
+
+<a href="https://recodata.io/">
+
+<h1 class="heading-home">
+
+Tshuapa <i class="bi bi-globe-europe-africa"></i>fficiel
+
+</h1>
+
+</a>
+
+</center>
+
+<justify> Il s'agit d'un site informatif sur la province de la Tshuapa en République Démocratique du Congo [Juafa.com](https://recodata.io/). Nous espérons que vous y trouverez informations que vous recherchez sur la province de la Tshuapa pour des possibles investissements et opportunités de collaborations et de travail. </justify> <br> <br>
+
+<center>
+
+[Designed by [Ekumbo B. Babby](https://babbymed.github.io/) and [Université de Ikela](https://universiteikela.github.io)]{style="font-face:italic;"}<br>
+
+[Images (Armoiries de la RD Congo): Open source, Google image]{style="font-size:.7rem; color:#a7abb4;"}
+
+</center>
+:::
+:::::
+::::::
+
+:::::: {.column-screen style="background-color:#31511E;"}
+::::: column-screen-inset
+::: {.home-column-image .col-left}
+<a href="https://labs.ala.org.au/posts/">
+
+![](imagens%20province/riviere_thsuapa.jpg){.home-img}
+
+</a>
+:::
+
+::: {.home-column-text .col-right}
+<center>
+
+<h1 class="heading-home" style="color: #fff;">
+
+Posts
+
+</h1>
+
+[How-to articles for solving scientific problems]{style="color: #fff; font-style: italic"}
+
+</center>
+
+```{r, include=TRUE}
+ 
+```
+:::
+:::::
+::::::
+
+:::::: column-screen
+::::: column-screen-inset
+::: {.home-column-image .col-right}
+<a href="https://labs.ala.org.au/research/highlights/"> ![](draft.jpeg){.home-img} </a>
+:::
+
+::: {.home-column-text .col-left}
+<center>
+
+<h1 class="heading-home">
+
+Research
+
+</h1>
+
+[Highlighting research supported by ALA data]{style="font-style: italic"}
+
+</center>
+
+```{r, include=TRUE}
+ 
+```
+:::
+:::::
+::::::
+
+:::::: {.column-screen style="background-color:#117554;"}
+::::: column-screen-inset
+::: {.home-column-image .col-left}
+<a href="https://labs.ala.org.au/software/index.html">
+
+![](images/homepage/home_ala-software-c.png){.home-img-transparent}
+
+</a>
+:::
+
+::: {.home-column-text .col-right}
+<center>
+
+<h1 class="heading-home" style="color: #fff;">
+
+Software
+
+</h1>
+
+[Tools supported by the Science & Decision Support Team]{style="font-style: italic; color: #fff;"}
+
+</center>
+
+```{r, include=TRUE}
+ 
+```
+:::
+:::::
+::::::
+
+:::::: {.column-screen style="background-color:#ffffff;"}
+::::: column-screen-inset
+::: {.home-column-image .col-left}
+<center>
+
+<h1 class="heading-home" style="color: #222322;">
+
+Books
+
+</h1>
+
+[Long-form resources by the Science & Decision Support Team]{style="font-style: italic;"}
+
+</center>
+
+```{r, include=TRUE}
+
+```
+:::
+
+::: {.home-column-text .col-right}
+<center>
+
+<a href="https://labs.ala.org.au/books/index.html">
+
+![](books/images/covers/cleaner-shrimp_cover.png){.home-img-transparent width="45%" style="border-radius:2%;"}
+
+</a>
+
+</center>
+:::
+:::::
+::::::
+
+------------------------------------------------------------------------
+
+::::: {.column-screen style="background-color:#fff;"}
+::: column-page
+<center>
+
+<h1>{{< fa earth-oceania >}} We value</h1>
+
+<a href="https://labs.ala.org.au/books/index.html">
+
+![](books/images/covers/cleaner-shrimp_cover.png){.home-img-transparent width="45%" style="border-radius:2%;"}
+
+</a>
+
+</center>
+:::
+
+::: column-screen
+```{r, include=TRUE}
+
+```
+:::
+:::::
+
+<!-- Diversité culturelle -->
+<div class="content-section">
+  <div class="image">
+    <img src="imagens province/diversite_culturelle.jpg" alt="Diversité culturelle de la Tshuapa">
+  </div>
+  <div class="text">
+    <h1>Richesse Culturelle</h1>
+    <p>
+      La province de la Tshuapa est un véritable carrefour culturel. Elle abrite une mosaïque de communautés ethniques qui perpétuent des traditions uniques, notamment à travers la musique, la danse, et l’artisanat. 
+      <a href="#more-culture">En savoir plus sur la diversité culturelle</a>.
+    </p>
+  </div>
+</div>
+
+<!-- Géographie -->
+<div class="content-section">
+  <div class="text">
+    <h1>Géographie et Environnement</h1>
+    <p>
+      La Tshuapa est traversée par la rivière du même nom, qui joue un rôle crucial pour la vie économique et sociale de la province. La région est également connue pour sa biodiversité exceptionnelle, avec de vastes forêts abritant une faune et une flore riches. 
+      <a href="#more-geography">Explorer la géographie de la Tshuapa</a>.
+    </p>
+  </div>
+  <div class="image">
+    <img src="imagens province/riviere_tshuapa.jpg" alt="Rivière Tshuapa">
+  </div>
+</div>
+
+<!-- Opportunités économiques -->
+<div class="content-section">
+  <div class="image">
+    <img src="imagens province/economie_tshuapa.jpg" alt="Économie et opportunités">
+  </div>
+  <div class="text">
+    <h1>Économie et Opportunités</h1>
+    <p>
+      La Tshuapa offre de nombreuses opportunités dans les secteurs agricoles, forestiers et du tourisme écologique. Les investisseurs sont encouragés à explorer cette région pour ses ressources naturelles abondantes.
+      <a href="#investment-opportunities">Découvrir les opportunités d’investissement</a>.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<footer class="footer">
+  <p>&copy; 2024 Gouvernement provincial de la Tshuapa. Tous droits réservés.</p>
+  <p><a href="#contact">Nous contacter</a> | <a href="#about">À propos</a></p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const dynamicText = document.getElementById("dynamic-text");
+  let visible = true;
+
+  setInterval(() => {
+    dynamicText.style.opacity = visible ? "1" : "0";
+    visible = !visible;
+  }, 4500);
+});
+</script>
+

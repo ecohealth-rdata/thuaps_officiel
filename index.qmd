@@ -1,0 +1,129 @@
+---
+toc: false
+format: 
+  html: 
+    include-in-header: https://www.canva.com/design/DAGWvy8m0i8/371hED7iACy7ZP8GR0NQPA/view?utm_content=DAGWvy8m0i8&utm_campaign=designshare&utm_medium=link&utm_source=editor
+    include-after-body: _footer.html
+    sidebar: false
+    anchor-sections: false
+    css: [theme.css, index.css]
+include-after-body: _footer.html
+grid: 
+  body-width: 1000px
+---
+
+```{r}
+#| include: false
+# To change the hero-image:
+
+# open theme.css
+# find the .hero-image section
+```
+
+```{r}
+#| include: false
+library(htmltools)
+#source("R/functions.R")
+```
+
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+::: {.container style=".text-top top: 10px;"}
+## **République Démocratique du Congo**
+:::
+
+<title>Atlas de Vie de la Tshuapa (AVT)</title>
+
+<link rel="stylesheet" href="theme.css"> <link rel="stylesheet" href="index.css"> <!-- Lien vers le fichier CSS -->
+
+</head>
+
+<body>
+
+```{=html}
+<header class="hero-banner", link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+<strong></strong>
+
+</header>
+```
+
+<main>
+
+<!-- Contenu principal -->
+
+</main>
+
+</body>
+
+</html>
+
+```{=html}
+<section id="dynamic-text" class="dynamic-text";width: 300px;>
+      Bienvenue sur l'Atlas de Vie de la Tshuapa. Ce site est une propriété du gouvernement provincial de la Tshuapa. Nous espérons que vous trouverez intéressant le contenu de ce site. 
+<p>
+    </p>
+    <strong>Savourez ce moment!</strong>
+    </section>
+    
+```
+
+```{=html}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dynamicText = document.getElementById("dynamic-text");
+    let isVisible = false;
+
+    setInterval(() => {
+      if (isVisible) {
+        dynamicText.classList.remove("slide-up");
+        dynamicText.classList.add("slide-down");
+      } else {
+        dynamicText.classList.remove("slide-down");
+        dynamicText.classList.add("slide-up");
+      }
+      isVisible = !isVisible;
+    }, 3000); // Change text every 10 seconds
+  });
+</script>
+```
+
+</main>
+
+```{=html}
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const dynamicText = document.getElementById("dynamic-text");
+  let isVisible = true;
+
+  setInterval(() => {
+    dynamicText.classList.toggle("slide-up", isVisible);
+    dynamicText.classList.toggle("slide-down", !isVisible);
+    isVisible = !isVisible;
+  }, 4500); // Intervalle unifié
+});
+
+  </script>
+```
+
+<p>
+
+</p>
+
+</body>
+
+```{=html}
+<html>
+<body>
+  <footer class="footer">
+    <p>© 2024 Gouvernement provincial de la Tshuapa. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
+```
